@@ -18,7 +18,7 @@
                 <h1 class="hero__name">
                     Muhammad<br><span class="gradient-text">Usman Younas</span>
                 </h1>
-                <p class="hero__role">Software Engineer &mdash; <em>Oracle ERP & Full Stack Developer</em></p>
+                <p class="hero__role">Software Engineer &mdash; <em>Oracle ERP & Full Stack Developer 0 ok</em></p>
                 <p class="hero__summary">{{ Str::limit($data['summary'], 180) }}</p>
                 <div class="hero__actions">
                     <a href="#projects" class="btn btn--primary">
