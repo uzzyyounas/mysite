@@ -13,6 +13,9 @@
             <a href="{{ route('cv.download') }}" class="btn btn--outline btn--sm">
                 <i data-feather="download"></i> Download CV
             </a>
+            <a href="{{ route('cv.download') }}" class="btn btn--outline btn--sm">
+                <i data-feather="download"></i> Digital Invoice
+            </a>
         </nav>
 
         <button class="navbar__toggle" id="menuToggle" aria-label="Toggle menu">
