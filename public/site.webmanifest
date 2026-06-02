@@ -1,0 +1,21 @@
+{
+    "name": "Muhammad Usman Younas - Software Engineer",
+    "short_name": "Usman Dev",
+    "description": "Professional Software Engineer specializing in Oracle ERP and Laravel Development",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#00d4ff",
+    "background_color": "#080c14",
+    "icons": [
+        {
+            "src": "/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

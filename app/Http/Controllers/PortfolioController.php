@@ -8,19 +8,65 @@ use Illuminate\Support\Facades\Validator;
 
 class PortfolioController extends Controller
 {
+    private $portfolioData;
+
+    public function __construct()
+    {
+        $this->portfolioData = $this->getPortfolioData();
+    }
+
     /**
-     * Show the portfolio homepage.
+     * Show home page
      */
     public function index()
     {
-        $data = $this->getPortfolioData();
-        return view('pages.home', compact('data'));
+        return view('pages.home', ['data' => $this->portfolioData]);
+    }
+
+    /**
+     * Show about page
+     */
+    public function about()
+    {
+        return view('pages.about', ['data' => $this->portfolioData]);
+    }
+
+    /**
+     * Show skills page
+     */
+    public function skills()
+    {
+        return view('pages.skills', ['data' => $this->portfolioData]);
+    }
+
+    /**
+     * Show experience page
+     */
+    public function experience()
+    {
+        return view('pages.experience', ['data' => $this->portfolioData]);
+    }
+
+    /**
+     * Show projects page
+     */
+    public function projects()
+    {
+        return view('pages.projects', ['data' => $this->portfolioData]);
+    }
+
+    /**
+     * Show contact page
+     */
+    public function contactPage()
+    {
+        return view('pages.contact', ['data' => $this->portfolioData]);
     }
 
     /**
      * Handle contact form submission.
      */
-    public function contact(Request $request)
+    public function submitContact(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'name'    => 'required|string|max:100',
@@ -46,8 +92,8 @@ class PortfolioController extends Controller
                 'messageBody'   => $request->message,
             ], function ($mail) use ($toEmail, $request) {
                 $mail->to($toEmail)
-                     ->replyTo($request->email, $request->name)
-                     ->subject('Portfolio Contact: ' . $request->subject);
+                    ->replyTo($request->email, $request->name)
+                    ->subject('Portfolio Contact: ' . $request->subject);
             });
 
             return response()->json([
