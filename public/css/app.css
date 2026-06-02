@@ -31,6 +31,7 @@
 
   --nav-h: 72px;
   --trans: 0.3s cubic-bezier(0.4,0,0.2,1);
+  --footer-h4:white;
 }
 
 /* Dark Theme (Default) */
@@ -77,6 +78,8 @@
 
     --shadow-card: 0 4px 24px rgba(0,0,0,0.08);
     --shadow-sm:   0 2px 4px rgba(0,0,0,0.04);
+
+    --footer-h4:black;
 }
 
 [data-theme="light"] .navbar.scrolled {
@@ -1147,7 +1150,7 @@ ul { list-style: none; }
 }
 
 .footer__column h4 {
-    color: white;
+    color: var(--footer-h4);
     margin-bottom: 15px;
     font-size: 1rem;
 }
