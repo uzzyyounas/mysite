@@ -22,6 +22,8 @@
     <meta name="twitter:title" content="@yield('twitter_title', 'Muhammad Usman Younas')">
     <meta name="twitter:description" content="@yield('twitter_description', 'Software Engineer | Oracle ERP & Laravel Developer')">
 
+    @stack('schema')
+
     <!-- Mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#00d4ff">

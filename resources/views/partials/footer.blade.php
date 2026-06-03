@@ -23,10 +23,9 @@
         <div class="footer__top">
 
             <div class="footer__brand">
-                <a href="#home" class="footer__logo">
-                    <span class="logo-bracket">&lt;</span>Usman
-                    <span class="logo-dot">.</span>dev
-                    <span class="logo-bracket">/&gt;</span>
+                <a href="{{ route('home') }}" class="navbar__logo">
+                    {{--            <span class="logo-bracket">&lt;</span>Usman<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>--}}
+                    <span>Uzy</span><span class="logo-dot"> Solution</span>
                 </a>
 
                 <p>
